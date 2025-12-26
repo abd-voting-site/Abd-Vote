@@ -1,0 +1,132 @@
+<p dir="ltr">/*<br>
+ * Global styles for Anime Vote Website<br>
+ *<br>
+ * Designed to be minimalist and modern. Uses system fonts for broad compatibility<br>
+ * and simple card layouts with soft shadows and rounded corners.<br>
+ */</p>
+<p dir="ltr">html, body {<br>
+&nbsp; margin: 0;<br>
+&nbsp; padding: 0;<br>
+&nbsp; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,<br>
+&nbsp;&nbsp;&nbsp; Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;<br>
+&nbsp; background-color: #f5f5f5;<br>
+&nbsp; color: #333;<br>
+}</p>
+<p dir="ltr">a {<br>
+&nbsp; color: #0070f3;<br>
+&nbsp; text-decoration: none;<br>
+&nbsp; transition: color 0.2s ease;<br>
+}</p>
+<p dir="ltr">a:hover {<br>
+&nbsp; color: #0051a3;<br>
+}</p>
+<p dir="ltr">header {<br>
+&nbsp; background-color: #ffffff;<br>
+&nbsp; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);<br>
+&nbsp; position: sticky;<br>
+&nbsp; top: 0;<br>
+&nbsp; z-index: 100;<br>
+}</p>
+<p dir="ltr">.container {<br>
+&nbsp; max-width: 1200px;<br>
+&nbsp; margin: 0 auto;<br>
+&nbsp; padding: 1rem;<br>
+}</p>
+<p dir="ltr">.nav {<br>
+&nbsp; display: flex;<br>
+&nbsp; align-items: center;<br>
+&nbsp; justify-content: space-between;<br>
+&nbsp; padding: 1rem 0;<br>
+}</p>
+<p dir="ltr">.nav a {<br>
+&nbsp; margin-left: 1rem;<br>
+&nbsp; font-weight: 500;<br>
+}</p>
+<p dir="ltr">.hero {<br>
+&nbsp; text-align: center;<br>
+&nbsp; padding: 4rem 1rem 2rem;<br>
+}</p>
+<p dir="ltr">.hero h1 {<br>
+&nbsp; font-size: 2.5rem;<br>
+&nbsp; margin-bottom: 1rem;<br>
+}</p>
+<p dir="ltr">.hero p {<br>
+&nbsp; font-size: 1.25rem;<br>
+&nbsp; color: #555;<br>
+&nbsp; max-width: 600px;<br>
+&nbsp; margin: 0 auto 2rem;<br>
+}</p>
+<p dir="ltr">.button {<br>
+&nbsp; display: inline-block;<br>
+&nbsp; padding: 0.75rem 1.5rem;<br>
+&nbsp; background-color: #0070f3;<br>
+&nbsp; color: #fff;<br>
+&nbsp; border-radius: 0.5rem;<br>
+&nbsp; font-weight: 500;<br>
+&nbsp; transition: background-color 0.2s ease;<br>
+}</p>
+<p dir="ltr">.button:hover {<br>
+&nbsp; background-color: #0051a3;<br>
+}</p>
+<p dir="ltr">.grid {<br>
+&nbsp; display: grid;<br>
+&nbsp; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));<br>
+&nbsp; gap: 1rem;<br>
+&nbsp; margin-top: 2rem;<br>
+}</p>
+<p dir="ltr">.card {<br>
+&nbsp; background-color: #fff;<br>
+&nbsp; padding: 1.5rem;<br>
+&nbsp; border-radius: 0.75rem;<br>
+&nbsp; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);<br>
+&nbsp; transition: transform 0.2s ease;<br>
+&nbsp; display: flex;<br>
+&nbsp; flex-direction: column;<br>
+&nbsp; justify-content: space-between;<br>
+}</p>
+<p dir="ltr">.card:hover {<br>
+&nbsp; transform: translateY(-4px);<br>
+}</p>
+<p dir="ltr">.card h3 {<br>
+&nbsp; margin: 0 0 0.5rem;<br>
+&nbsp; font-size: 1.25rem;<br>
+}</p>
+<p dir="ltr">.card p {<br>
+&nbsp; flex-grow: 1;<br>
+&nbsp; font-size: 0.95rem;<br>
+&nbsp; color: #666;<br>
+}</p>
+<p dir="ltr">.vote-button {<br>
+&nbsp; margin-top: 1rem;<br>
+&nbsp; padding: 0.5rem 1rem;<br>
+&nbsp; background-color: #0070f3;<br>
+&nbsp; color: #fff;<br>
+&nbsp; border: none;<br>
+&nbsp; border-radius: 0.5rem;<br>
+&nbsp; cursor: pointer;<br>
+&nbsp; font-size: 1rem;<br>
+&nbsp; transition: background-color 0.2s ease;<br>
+}</p>
+<p dir="ltr">.vote-button[disabled] {<br>
+&nbsp; background-color: #ccc;<br>
+&nbsp; cursor: default;<br>
+}</p>
+<p dir="ltr">.vote-button:not([disabled]):hover {<br>
+&nbsp; background-color: #0051a3;<br>
+}</p>
+<p dir="ltr">/* Results page styling */<br>
+.results-table {<br>
+&nbsp; width: 100%;<br>
+&nbsp; border-collapse: collapse;<br>
+&nbsp; margin-top: 2rem;<br>
+}</p>
+<p dir="ltr">.results-table th,<br>
+.results-table td {<br>
+&nbsp; border-bottom: 1px solid #eaeaea;<br>
+&nbsp; padding: 0.75rem 1rem;<br>
+&nbsp; text-align: left;<br>
+}</p>
+<p dir="ltr">.results-table th {<br>
+&nbsp; background-color: #fafafa;<br>
+&nbsp; font-weight: 600;<br>
+}</p>

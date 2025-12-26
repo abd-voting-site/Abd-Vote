@@ -1,0 +1,41 @@
+<p dir="ltr">&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&nbsp; &lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8" /&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;title&gt;Admin - Anime Vote&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;link rel="stylesheet" href="style.css" /&gt;<br>
+&nbsp; &lt;/head&gt;<br>
+&nbsp; &lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;header&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="container nav"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="logo"&gt;&lt;strong&gt;Anime Vote&lt;/strong&gt;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;nav&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="index.html"&gt;Home&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="categories.html"&gt;Categories&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="results.html"&gt;Your Votes&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/nav&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/header&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;main class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Admin Tools&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This page provides simple tools for managing votes stored in your<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; browser.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button class="vote-button" onclick="clearVotes()"&gt;Reset All Votes&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p id="admin-message" style="margin-top: 1rem;"&gt;&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/main&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function clearVotes() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Object.keys(localStorage).forEach((key) =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (key.endsWith('-vote')) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; localStorage.removeItem(key);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById('admin-message').textContent =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'All votes have been cleared.';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; &lt;/script&gt;<br>
+&nbsp; &lt;/body&gt;<br>
+&lt;/html&gt;</p>
